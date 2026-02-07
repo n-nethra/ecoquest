@@ -67,17 +67,20 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#21b865',
   },
   content: {
     padding: 20,
     paddingTop: 60,
     paddingBottom: 40,
+    
   },
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     marginBottom: 6,
+    backgroundColor: '#21b865',
   },
   subtitle: {
     marginBottom: 20,
@@ -90,23 +93,26 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 24,
     borderWidth: 1,
+    backgroundColor: '#0b7a2c',
   },
   points: {
     fontSize: 42,
     fontWeight: 'bold',
     marginTop: 8,
     marginBottom: 4,
+    color: '#fbff8c',
   },
   streak: {
     fontSize: 14,
     fontWeight: '600',
-    color: '#FF9500',
+    color: '#ce900c',
   },
   sectionTitle: {
     marginBottom: 12,
   },
   taskList: {
     gap: 12,
+    backgroundColor: '#0b7a2c',
   },
   task: {
     padding: 16,
@@ -115,9 +121,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+    
   },
   taskContent: {
     flex: 1,
+    backgroundColor: '#0b7a2c',
   },
   taskMeta: {
     fontSize: 12,
@@ -126,7 +134,7 @@ const styles = StyleSheet.create({
   },
   taskDone: {
     opacity: 0.5,
-    backgroundColor: 'rgba(0,0,0,0.05)',
+    backgroundColor: 'rgba(0, 0, 0, 0.1)',
   },
   resetButton: {
     padding: 8,

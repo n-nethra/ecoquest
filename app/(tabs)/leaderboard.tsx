@@ -87,6 +87,7 @@ export default function CommunityScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#5dcf46',
   },
   content: {
     padding: 20,
@@ -94,6 +95,9 @@ const styles = StyleSheet.create({
   },
   header: {
     marginBottom: 24,
+    backgroundColor: '#4ab535',
+    borderRadius: 20,
+    padding: 20
   },
   subtitle: {
     fontSize: 16,
@@ -102,6 +106,7 @@ const styles = StyleSheet.create({
   },
   section: {
     marginBottom: 30,
+    backgroundColor: '#5dcf46',
   },
   sectionTitle: {
     marginBottom: 16,
@@ -115,6 +120,8 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     borderWidth: 1,
     marginRight: 12,
+    
+    backgroundColor: '#4ab535',
   },
   challengeDesc: {
     fontSize: 14,
@@ -129,12 +136,13 @@ const styles = StyleSheet.create({
   progressBar: {
     height: 6,
     backgroundColor: 'rgba(0,0,0,0.1)',
+    
     borderRadius: 3,
     overflow: 'hidden',
   },
   progressFill: {
     height: '100%',
-    backgroundColor: '#34C759',
+    backgroundColor: '#36fd39',
   },
   tabs: {
     flexDirection: 'row',
@@ -170,13 +178,17 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     borderWidth: 1,
     overflow: 'hidden',
+    backgroundColor: '#2f9400',
+    
   },
   leaderboardItem: {
     flexDirection: 'row',
     alignItems: 'center',
     padding: 16,
     borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: 'rgba(0,0,0,0.1)',
+    borderBottomColor: 'rgba(10, 156, 0, 0.52)',
+    
+    backgroundColor: '#4ab535',
   },
   highlightItem: {
     backgroundColor: 'rgba(52, 199, 89, 0.1)',

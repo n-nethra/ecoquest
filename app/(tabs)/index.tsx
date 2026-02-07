@@ -67,7 +67,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#21b865',
+    backgroundColor: '#5dcf46',
   },
   content: {
     padding: 20,
@@ -80,12 +80,16 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     marginBottom: 6,
-    backgroundColor: '#21b865',
+    backgroundColor: '#4ab535',
+    borderRadius: 20,
+    padding: 20
+
   },
   subtitle: {
     marginBottom: 20,
     fontSize: 16,
     opacity: 0.8,
+    color: '#226f01'    
   },
   pointsBox: {
     padding: 20,
@@ -93,26 +97,26 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 24,
     borderWidth: 1,
-    backgroundColor: '#0b7a2c',
+    backgroundColor: '#36b71f',
   },
   points: {
     fontSize: 42,
     fontWeight: 'bold',
-    marginTop: 8,
-    marginBottom: 4,
-    color: '#fbff8c',
+    paddingTop: 28,
+    marginBottom: 7,
+    color: '#efffb3',
   },
   streak: {
     fontSize: 14,
     fontWeight: '600',
-    color: '#ce900c',
+    color: '#ffe562',
   },
   sectionTitle: {
     marginBottom: 12,
   },
   taskList: {
     gap: 12,
-    backgroundColor: '#0b7a2c',
+    backgroundColor: '#36b71f00',
   },
   task: {
     padding: 16,
@@ -121,11 +125,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    
   },
   taskContent: {
     flex: 1,
-    backgroundColor: '#0b7a2c',
+    backgroundColor: '#36b71f00',
   },
   taskMeta: {
     fontSize: 12,

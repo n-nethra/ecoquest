@@ -1,10 +1,9 @@
-import { StyleSheet, ScrollView, Image } from 'react-native';
+import { ScrollView, StyleSheet } from 'react-native';
 
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { useUser } from '@/context/UserContext';
 import { useThemeColor } from '@/hooks/use-theme-color';
-import { IconSymbol } from '@/components/ui/icon-symbol';
 
 export default function ProfileScreen() {
   const { user } = useUser();
@@ -53,16 +52,22 @@ export default function ProfileScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#5dcf46',
   },
   content: {
     padding: 20,
     paddingTop: 60,
     alignItems: 'center',
+    
   },
   header: {
     alignItems: 'center',
     marginBottom: 30,
     width: '100%',
+    borderRadius: 20,
+    margin:20,
+    padding:20,
+    backgroundColor: '#3ab023',
   },
   avatarPlaceholder: {
     width: 100,
@@ -72,10 +77,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 16,
+    backgroundColor: '#0b8100',
   },
   avatarText: {
     fontSize: 40,
     fontWeight: 'bold',
+    paddingTop:20
   },
   name: {
     marginBottom: 4,
@@ -88,18 +95,25 @@ const styles = StyleSheet.create({
   level: {
     fontSize: 18,
     fontWeight: '600',
-    color: '#34C759',
+    color: '#005609',
   },
   section: {
     width: '100%',
     marginBottom: 30,
+    margin: 10,
+    borderRadius: 20,
+    padding:20,
+    backgroundColor: '#3ab023',
   },
   sectionTitle: {
     marginBottom: 16,
+    backgroundColor: '#3ab023',
   },
   statsGrid: {
     flexDirection: 'row',
     gap: 16,
+    
+    backgroundColor: '#3ab023',
   },
   statCard: {
     flex: 1,
@@ -107,6 +121,8 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     borderWidth: 1,
     alignItems: 'center',
+    
+    backgroundColor: '#238b0f',
   },
   statValue: {
     fontSize: 24,
@@ -120,15 +136,16 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     gap: 16,
+    backgroundColor: '#3ab023',
   },
   badgeCard: {
     width: '30%',
     aspectRatio: 1,
-    padding: 8,
     borderRadius: 12,
     borderWidth: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 20,
   },
   badgeIcon: {
     fontSize: 32,

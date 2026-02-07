@@ -1,10 +1,10 @@
-import { StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
 import { useState } from 'react';
+import { ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
 
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { useThemeColor } from '@/hooks/use-theme-color';
 import { useUser } from '@/context/UserContext';
+import { useThemeColor } from '@/hooks/use-theme-color';
 
 const LEADERBOARD_DATA = [
   { id: '1', name: 'Sarah J.', points: 1250, rank: 1 },
